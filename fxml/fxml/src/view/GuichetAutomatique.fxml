@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TextField?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@GuichetAutomatique.css" />
+    </stylesheets>
+
+    <children>
+        <Label text="Numero de compte :" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="8.0" />
+        <TextField fx:id="numeroCompte" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="8.0" promptText="Numero de compte" />
+
+        <Label text="Deposer :" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="40.0" />
+        <TextField fx:id="mtnDepot" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="40.0" promptText="Montant a deposer"  />
+        <Button fx:id="btndeposer" text="Deposer" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="72.0" />
+
+        <Label text="Retirer :" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="104.0" />
+        <TextField fx:id="mtnRetrait" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="104.0"  promptText="Montant a retirer" />
+        <Button fx:id="btnretirer" text="Retirer" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="136.0" />
+
+        <Button fx:id="obtAide" text="Obtenir aide" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="168.0" />
+    </children>
+</AnchorPane>
