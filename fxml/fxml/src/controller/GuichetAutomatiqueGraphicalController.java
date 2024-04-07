@@ -8,6 +8,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
+import model.Comptes;
 import model.GuichetAutomatique;
 
 /**
@@ -22,9 +23,9 @@ public class GuichetAutomatiqueGraphicalController {
     @FXML
     private TextField mtnRetrait;
     @FXML
-    private Button btnRetirer;
+    private Button btnretirer;
     @FXML
-    private Button btnDeposer;
+    private Button btndeposer;
     @FXML
     private Button obtAide;
 
@@ -32,6 +33,8 @@ public class GuichetAutomatiqueGraphicalController {
     @FXML
     private void initialize() {
         obtAide.setOnAction(this::onInfoButtonClick);
+        btndeposer.setOnAction(this::onDeposerButtonClick);
+        btnretirer.setOnAction(this::onRetirerButtonClick);
     }
 
     public GuichetAutomatiqueGraphicalController(GuichetAutomatique guichetAutomatique) {
@@ -40,13 +43,15 @@ public class GuichetAutomatiqueGraphicalController {
 
 
     private void onDeposerButtonClick(ActionEvent event){
-
-
+    guichetAutomatique.setNumeroCompte(Integer.parseInt(numeroCompte.getText()));
+    guichetAutomatique.setMtnDepot(Double.parseDouble(mtnDepot.getText()));
+    guichetAutomatique.deposerArgent(guichetAutomatique.getNumeroCompte());
     }
 
     private void onRetirerButtonClick(ActionEvent event){
-
-
+        guichetAutomatique.setNumeroCompte(Integer.parseInt(numeroCompte.getText()));
+        guichetAutomatique.setMtnRetrait(Double.parseDouble(mtnRetrait.getText()));
+        guichetAutomatique.retirerArgent(guichetAutomatique.getNumeroCompte());
     }
 
     private void onInfoButtonClick(ActionEvent actionEvent) {
