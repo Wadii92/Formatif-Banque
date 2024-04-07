@@ -1,4 +1,7 @@
 package model;
+
+import javafx.scene.control.Alert;
+
 /**
  * La classe Compte représente un compte bancaire avec un numéro de compte unique et un solde.
  */
@@ -67,6 +70,11 @@ public class Comptes {
             System.out.println("Retrait de " + montant + " effectué avec succès. Nouveau solde : " + solde);
         } else {
             System.out.println("Solde insuffisant pour effectuer le retrait.");
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Alert solde insuffisant");
+            alert.setHeaderText("Retrait");
+            alert.setContentText("Solde insuffisant pour effectuer le retrait. ");
+            alert.showAndWait();
         }
 
     }
