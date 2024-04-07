@@ -22,7 +22,7 @@
 
         <Label text="Retirer :" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="104.0" />
         <TextField fx:id="mtnRetrait" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="104.0"  promptText="Montant a retirer" />
-        <Button fx:id="btnretirer" text="Retirer" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="136.0" />
+        <Button fx:id="btnretirer" text="Retirer   " AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="136.0" />
 
         <Button fx:id="obtAide" text="Obtenir aide" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="168.0" />
     </children>

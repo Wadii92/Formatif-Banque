@@ -1,3 +1,17 @@
 .button {
     -fx-cursor: hand;
+
+}
+
+#btndeposer{
+    -fx-background-color: #4CAF50;
+}
+
+#btnretirer{
+    -fx-background-color: #FFCDD2;
+}
+
+
+#obtAide{
+    -fx-background-color: #BBDEFB;
 }
